@@ -1,0 +1,178 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Testing R2-D2",
+		"_postman_id": "3b34a9b4-4816-1c0b-2875-a5bcb9c5a237",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getVehicle/{id}",
+			"request": {
+				"url": "http://localhost:8080/R2-D2/vehicle/getVehicle/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getVehicles/",
+			"request": {
+				"url": "http://localhost:8080/R2-D2/vehicle/getVehicles/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"url": "http://localhost:8080/R2-D2/vehicle/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "year",
+							"value": "1999",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "make",
+							"value": "T-465",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "model",
+							"value": "X-wing",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "class",
+							"value": "TIE Fighter",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"url": "http://localhost:8080/R2-D2/vehicle/delete",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "7",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"url": "http://localhost:8080/R2-D2/vehicle/update",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "year",
+							"value": "2000",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "make",
+							"value": "updated_make",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "model",
+							"value": "updated_model",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "class",
+							"value": "updated_model",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
